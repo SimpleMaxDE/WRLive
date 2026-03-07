@@ -1,0 +1,58 @@
+{
+  "fields": {
+    "identity": [
+      "championname",
+      "patch",
+      "rolle/lane",
+      "tier"
+    ],
+    "stats": [
+      "winrate",
+      "pickrate",
+      "banrate",
+      "ranking-position"
+    ],
+    "matchup": [
+      "starke-gegner",
+      "schwache-gegner"
+    ],
+    "build": [
+      "startitem",
+      "boots",
+      "core-items",
+      "final-build",
+      "situational-items"
+    ],
+    "gameplay": [
+      "summoner-spells",
+      "skill-order",
+      "fähigkeiten",
+      "guide-text"
+    ],
+    "meta": [
+      "autor",
+      "updated-at"
+    ]
+  },
+  "segmentation": {
+    "stats_driven": [
+      "winrate",
+      "pickrate",
+      "banrate",
+      "ranking-position",
+      "matchup-score"
+    ],
+    "static_game_data": [
+      "abilities",
+      "item base data",
+      "rune descriptions",
+      "spell cooldowns"
+    ],
+    "editorial": [
+      "playstyle",
+      "early-mid-late",
+      "combos",
+      "lane/teamfight tips"
+    ]
+  }
+}

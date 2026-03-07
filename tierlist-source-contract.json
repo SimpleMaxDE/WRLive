@@ -1,0 +1,24 @@
+{
+  "patch_visible": true,
+  "role_tabs_visible": true,
+  "tiers_visible": [
+    "S",
+    "A",
+    "B",
+    "C"
+  ],
+  "labels_visible": [
+    "meta/top-pick style badges"
+  ],
+  "guide_linking_visible": true,
+  "update_logic": "patch-based + editorial/meta weighting inferred",
+  "split": {
+    "statistical": [
+      "patch context",
+      "performance trend"
+    ],
+    "editorial": [
+      "tier placement narrative"
+    ]
+  }
+}

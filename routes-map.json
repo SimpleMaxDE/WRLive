@@ -1,0 +1,770 @@
+[
+  {
+    "route": "/",
+    "pageType": "home"
+  },
+  {
+    "route": "/cdn-cgi/l/email-protection#21424e4f5540554e6156484d454d4446444f45520f4f4455",
+    "pageType": "other"
+  },
+  {
+    "route": "/cdn-cgi/l/email-protection#42212d2c3623362d02352b2e262e2725272c26316c2c2736",
+    "pageType": "other"
+  },
+  {
+    "route": "/cdn-cgi/l/email-protection#aac9c5c4decbdec5eaddc3c6cec6cfcdcfc4ced984c4cfde",
+    "pageType": "other"
+  },
+  {
+    "route": "/cdn-cgi/l/email-protection#bad9d5d4cedbced5facdd3d6ded6dfdddfd4dec994d4dfce",
+    "pageType": "other"
+  },
+  {
+    "route": "/cdn-cgi/l/email-protection#e784888993869388a7908e8b838b828082898394c9898293",
+    "pageType": "other"
+  },
+  {
+    "route": "/cdn-cgi/l/email-protection#e98a86879d889d86a99e80858d858c8e8c878d9ac7878c9d",
+    "pageType": "other"
+  },
+  {
+    "route": "/champion/Annie",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/AurelionSol",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/Brand",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/Fizz",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/Syndra",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/Velkoz",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/aatrox",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/ambessa",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/camille",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/darius",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/drmundo",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/fiora",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/garen",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/gnar",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/gwen",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/irelia",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/jax",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/jayce",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/kalista",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/kayle",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/kennen",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/malphite",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/monkeyking",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/mordekaiser",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/nasus",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/nautilus",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/ornn",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/poppy",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/renekton",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/riven",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/rumble",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/ryze",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/sett",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/shen",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/singed",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/sion",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/smolder",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/swain",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/teemo",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/tryndamere",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/urgot",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/vayne",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/volibear",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/yasuo",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/champion/yone",
+    "pageType": "ranking-champion-detail"
+  },
+  {
+    "route": "/guia/Ahri",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Akali",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Akshan",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Alistar",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Ambessa",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Amumu",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Annie",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Ashe",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/AurelionSol",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Aurora",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Bard",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Blitzcrank",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Brand",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Braum",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Caitlyn",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Camille",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Corki",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Darius",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Diana",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/DrMundo",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Draven",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Ekko",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Evelynn",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Ezreal",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Fiddlesticks",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Fiora",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Fizz",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Galio",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Garen",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Gnar",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Gragas",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Graves",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Gwen",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Hecarim",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Heimerdinger",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Irelia",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Janna",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/JarvanIV",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Jax",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Jayce",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Jhin",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Jinx",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Kaisa",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Kalista",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Karma",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Kassadin",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Katarina",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Kayle",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Kayn",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Kennen",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Khazix",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Kindred",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/KogMaw",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/LeeSin",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Leona",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Lillia",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Lissandra",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Lucian",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Lulu",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Lux",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Malphite",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Maokai",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/MasterYi",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Milio",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/MissFortune",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/MonkeyKing",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Mordekaiser",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Morgana",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Nami",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Nasus",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Nautilus",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Nidalee",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Nilah",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Nocturne",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Nunu",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Olaf",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Orianna",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Ornn",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Pantheon",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Poppy",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Pyke",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Rakan",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Rammus",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Rell",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Renekton",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Rengar",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Riven",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Rumble",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Ryze",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Samira",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Senna",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Seraphine",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Sett",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Shen",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Shyvana",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Singed",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Sion",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Sivir",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Smolder",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Sona",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Soraka",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Swain",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Syndra",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Talon",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Teemo",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Thresh",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Tristana",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Tryndamere",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/TwistedFate",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Twitch",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Urgot",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Varus",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Vayne",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Veigar",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Velkoz",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Vex",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Vi",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Viego",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Viktor",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Vladimir",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Volibear",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Warwick",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Xayah",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/XinZhao",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Yasuo",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Yone",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Yuumi",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Zed",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Zeri",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Ziggs",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Zilean",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Zoe",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/Zyra",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/aatrox",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/mel",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guia/norra",
+    "pageType": "guide-detail"
+  },
+  {
+    "route": "/guias",
+    "pageType": "guides-index"
+  },
+  {
+    "route": "/itens",
+    "pageType": "catalog"
+  },
+  {
+    "route": "/ranking",
+    "pageType": "ranking"
+  },
+  {
+    "route": "/tier-list",
+    "pageType": "tier-list"
+  }
+]

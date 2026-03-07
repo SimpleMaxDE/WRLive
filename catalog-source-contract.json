@@ -1,0 +1,37 @@
+{
+  "tabs": [
+    "items",
+    "runes",
+    "summoner-spells"
+  ],
+  "filters": [
+    "search",
+    "item-attribute-filters",
+    "rune-tree-filter"
+  ],
+  "categories": [
+    "physisch",
+    "magisch",
+    "defensiv",
+    "support",
+    "boots",
+    "basis",
+    "zwischenitems"
+  ],
+  "status_markers": [
+    "neu",
+    "rework",
+    "buff",
+    "nerf"
+  ],
+  "detail_fields": [
+    "cost",
+    "stats",
+    "passive/active",
+    "build path",
+    "built from",
+    "builds into",
+    "recommended champions",
+    "patch history"
+  ]
+}
