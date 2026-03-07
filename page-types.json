@@ -1,0 +1,34 @@
+[
+  {
+    "pageType": "home",
+    "count": 1
+  },
+  {
+    "pageType": "other",
+    "count": 6
+  },
+  {
+    "pageType": "ranking-champion-detail",
+    "count": 45
+  },
+  {
+    "pageType": "guide-detail",
+    "count": 136
+  },
+  {
+    "pageType": "guides-index",
+    "count": 1
+  },
+  {
+    "pageType": "catalog",
+    "count": 1
+  },
+  {
+    "pageType": "ranking",
+    "count": 1
+  },
+  {
+    "pageType": "tier-list",
+    "count": 1
+  }
+]

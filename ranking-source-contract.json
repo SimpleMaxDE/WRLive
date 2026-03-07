@@ -1,0 +1,24 @@
+{
+  "source_visibility": "unknown/inferred",
+  "source_classification": "inferred",
+  "metrics_visible": [
+    "winrate",
+    "pickrate",
+    "banrate",
+    "presence",
+    "rank"
+  ],
+  "filters_visible": [
+    "elo",
+    "role",
+    "patch"
+  ],
+  "sorting_visible": [
+    "winrate",
+    "presence",
+    "banrate",
+    "pickrate"
+  ],
+  "update_hint": "visible updated timestamps",
+  "confidence": "medium"
+}

@@ -1,0 +1,21 @@
+{
+  "recurringCards": [
+    "champion-grid-card",
+    "stat-pill",
+    "tier-row",
+    "ranking-row",
+    "meta-badge"
+  ],
+  "recurringControls": [
+    "tab-switch",
+    "dropdown-filter",
+    "search-input",
+    "chip-badges"
+  ],
+  "recurringLinks": [
+    "guide-to-catalog",
+    "tier-to-guide",
+    "ranking-to-guide",
+    "global-header-links"
+  ]
+}

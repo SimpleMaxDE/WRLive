@@ -1,0 +1,275 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  BARON
+  JUNGLE
+  MID
+  DRAGON
+  SUPPORT
+}
+
+enum TierRank {
+  S
+  A
+  B
+  C
+}
+
+enum TagType {
+  NEW
+  REWORK
+  BUFF
+  NERF
+}
+
+model Patch {
+  id           String   @id @default(cuid())
+  version      String   @unique
+  releasedAt   DateTime
+  notesUrl     String?
+  createdAt    DateTime @default(now())
+  champions    Champion[]
+  championStats ChampionStat[]
+  tierlists    Tierlist[]
+  rankings     Ranking[]
+  tags         Tag[]
+}
+
+model Champion {
+  id            String           @id @default(cuid())
+  slug          String           @unique
+  name          String
+  title         String
+  overview      String
+  iconUrl       String
+  heroImageUrl  String
+  currentPatchId String
+  currentPatch  Patch            @relation(fields: [currentPatchId], references: [id])
+  roles         ChampionRole[]
+  stats         ChampionStat[]
+  guide         ChampionGuide?
+  skills        Skill[]
+  matchupsAsChampion ChampionMatchup[] @relation("ChampionMatchups")
+  matchupsAsOpponent ChampionMatchup[] @relation("OpponentMatchups")
+  synergiesLeft ChampionSynergy[] @relation("SynergyFrom")
+  synergiesRight ChampionSynergy[] @relation("SynergyTo")
+}
+
+model ChampionRole {
+  id         String @id @default(cuid())
+  championId String
+  role       Role
+  primary    Boolean @default(false)
+  champion   Champion @relation(fields: [championId], references: [id], onDelete: Cascade)
+  @@unique([championId, role])
+}
+
+model ChampionStat {
+  id            String   @id @default(cuid())
+  championId    String
+  patchId       String
+  role          Role
+  eloBracket    String
+  winrate       Float
+  pickrate      Float
+  banrate       Float
+  presence      Float
+  rankPosition  Int
+  updatedAt     DateTime @updatedAt
+  champion      Champion @relation(fields: [championId], references: [id], onDelete: Cascade)
+  patch         Patch    @relation(fields: [patchId], references: [id], onDelete: Cascade)
+}
+
+model ChampionGuide {
+  id               String   @id @default(cuid())
+  championId       String   @unique
+  patchId          String
+  lane             Role
+  tier             TierRank
+  playstyle        String
+  earlyGame        String
+  midGame          String
+  lateGame         String
+  combos           String
+  laneTips         String
+  teamfightTips    String
+  mainBuild        Json
+  situationalItems Json
+  bootsEnchant     Json
+  summonerSpells   Json
+  runePage         Json
+  skillOrder       Json
+  updatedAt        DateTime @updatedAt
+  champion         Champion @relation(fields: [championId], references: [id], onDelete: Cascade)
+  patch            Patch    @relation(fields: [patchId], references: [id])
+}
+
+model Skill {
+  id          String @id @default(cuid())
+  championId  String
+  key         String
+  name        String
+  description String
+  iconUrl     String
+  champion    Champion @relation(fields: [championId], references: [id], onDelete: Cascade)
+}
+
+model SkillOrder {
+  id          String @id @default(cuid())
+  championId  String
+  lane        Role
+  levelPlan   Json
+  champion    Champion @relation(fields: [championId], references: [id], onDelete: Cascade)
+}
+
+model ChampionMatchup {
+  id          String @id @default(cuid())
+  championId  String
+  opponentId  String
+  score       Float
+  note        String
+  champion    Champion @relation("ChampionMatchups", fields: [championId], references: [id], onDelete: Cascade)
+  opponent    Champion @relation("OpponentMatchups", fields: [opponentId], references: [id], onDelete: Cascade)
+}
+
+model ChampionSynergy {
+  id          String @id @default(cuid())
+  championId  String
+  allyId      String
+  score       Float
+  note        String
+  champion    Champion @relation("SynergyFrom", fields: [championId], references: [id], onDelete: Cascade)
+  ally        Champion @relation("SynergyTo", fields: [allyId], references: [id], onDelete: Cascade)
+}
+
+model Item {
+  id          String @id @default(cuid())
+  slug        String @unique
+  name        String
+  description String
+  iconUrl     String
+  category    String
+  cost        Int
+  tags        Tag[]
+  stats       ItemStat[]
+  buildPathFrom ItemBuildPath[] @relation("BuildFrom")
+  buildPathTo   ItemBuildPath[] @relation("BuildTo")
+}
+
+model ItemStat {
+  id      String @id @default(cuid())
+  itemId  String
+  label   String
+  value   String
+  item    Item   @relation(fields: [itemId], references: [id], onDelete: Cascade)
+}
+
+model ItemBuildPath {
+  id          String @id @default(cuid())
+  itemId      String
+  componentId String
+  item        Item @relation("BuildFrom", fields: [itemId], references: [id], onDelete: Cascade)
+  component   Item @relation("BuildTo", fields: [componentId], references: [id], onDelete: Cascade)
+}
+
+model Rune {
+  id          String @id @default(cuid())
+  slug        String @unique
+  name        String
+  tree        String
+  type        String
+  description String
+  iconUrl     String
+}
+
+model SummonerSpell {
+  id          String @id @default(cuid())
+  slug        String @unique
+  name        String
+  cooldown    String
+  description String
+  iconUrl     String
+}
+
+model Tierlist {
+  id          String   @id @default(cuid())
+  patchId     String
+  role        Role
+  updatedAt   DateTime @updatedAt
+  patch       Patch    @relation(fields: [patchId], references: [id])
+  entries     TierlistEntry[]
+}
+
+model TierlistEntry {
+  id            String   @id @default(cuid())
+  tierlistId     String
+  championId     String
+  tier           TierRank
+  placement      Int
+  badges         String[]
+  tierlist       Tierlist  @relation(fields: [tierlistId], references: [id], onDelete: Cascade)
+  champion       Champion  @relation(fields: [championId], references: [id], onDelete: Cascade)
+}
+
+model Ranking {
+  id          String   @id @default(cuid())
+  patchId     String
+  role        Role
+  eloBracket  String
+  updatedAt   DateTime @updatedAt
+  patch       Patch @relation(fields: [patchId], references: [id])
+  entries     RankingEntry[]
+}
+
+model RankingEntry {
+  id          String  @id @default(cuid())
+  rankingId   String
+  championId  String
+  placement   Int
+  winrate     Float
+  pickrate    Float
+  banrate     Float
+  presence    Float
+  ranking     Ranking @relation(fields: [rankingId], references: [id], onDelete: Cascade)
+  champion    Champion @relation(fields: [championId], references: [id], onDelete: Cascade)
+}
+
+model Tag {
+  id          String @id @default(cuid())
+  type        TagType
+  label       String
+  patchId     String
+  patch       Patch  @relation(fields: [patchId], references: [id], onDelete: Cascade)
+  itemId      String?
+  item        Item?  @relation(fields: [itemId], references: [id], onDelete: Cascade)
+}
+
+model Source {
+  id          String   @id @default(cuid())
+  key         String   @unique
+  name        String
+  url         String
+  type        String
+  notes       String?
+  active      Boolean  @default(true)
+  updateLogs  UpdateLog[]
+}
+
+model UpdateLog {
+  id          String   @id @default(cuid())
+  sourceId    String
+  jobType     String
+  status      String
+  startedAt   DateTime @default(now())
+  finishedAt  DateTime?
+  message     String?
+  diffSummary Json?
+  source      Source   @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+}
