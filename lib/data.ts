@@ -11,12 +11,12 @@ const rawChampionNames = [
 ];
 
 const titlePool = [
-  "Strategischer Frontliner",
-  "Kontrollmagier im Meta",
-  "Skalierende Carry-Option",
-  "Aggressiver Engage-Spezialist",
-  "Roaming-Pick mit Tempo",
-  "Lane-Dominator im aktuellen Patch"
+  "Strategic frontliner",
+  "Meta control mage",
+  "Scaling carry option",
+  "Aggressive engage specialist",
+  "Tempo roaming pick",
+  "Current patch lane dominator"
 ];
 
 function slugify(name: string) {
@@ -94,7 +94,7 @@ export const spells: SpellEntry[] = [
   { slug: "heilung", name: "Heilung", cooldown: "110s", description: "Heilt Träger + nahen Verbündeten.", useCase: "Duo-Lane-Skirmishes" }
 ];
 
-export const rankingSourceAttribution = "Aggregierte öffentliche Matchdaten (inferred) + interne Normalisierung";
+export const rankingSourceAttribution = "Aggregated public match data (inferred) + internal normalization";
 
 export function roleLabel(role: Role) {
   return { BARON: "Baron", JUNGLE: "Jungle", MID: "Mid", DRAGON: "Dragon", SUPPORT: "Support" }[role];
@@ -131,11 +131,11 @@ export function getGuideLoadout(champion: Champion) {
 
 export function abilitySet(champion: Champion) {
   return [
-    { key: "P", name: `Passiv von ${champion.name}`, desc: "Skaliert mit Fähigkeitsnutzung und belohnt präzises Timing." },
-    { key: "Q", name: "Q – Hauptfähigkeit", desc: "Hauptquelle für Clear, Poke oder Burst je nach Build." },
-    { key: "W", name: "W – Utility", desc: "Kontrolle, Schutz oder Follow-up für Teamkämpfe." },
-    { key: "E", name: "E – Engage/Disengage", desc: "Werkzeug für Positionierung und Fenster für Trades." },
-    { key: "R", name: "R – Ultimate", desc: "Power-Spike in Fights, Priorität auf wichtige Ziele." }
+    { key: "P", name: `Passive of ${champion.name}`, desc: "Scales with ability usage and rewards precise timing." },
+    { key: "Q", name: "Q – Core Ability", desc: "Main source of clear, poke, or burst depending on build." },
+    { key: "W", name: "W – Utility", desc: "Control, protection, or follow-up for teamfights." },
+    { key: "E", name: "E – Engage/Disengage", desc: "Tool for positioning and trading windows." },
+    { key: "R", name: "R – Ultimate", desc: "Power spike in fights, prioritize key targets." }
   ];
 }
 

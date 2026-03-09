@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export function buildMetadata(title: string, description: string, path: string): Metadata {
-  const url = `https://www.riftkompass.de${path}`;
+  const url = `https://www.wildlegendshub.com${path}`;
   return {
     title,
     description,
@@ -10,8 +10,8 @@ export function buildMetadata(title: string, description: string, path: string):
       title,
       description,
       url,
-      siteName: "RiftKompass",
-      locale: "de_DE",
+      siteName: "WildLegends Hub",
+      locale: "en_US",
       type: "website"
     }
   };

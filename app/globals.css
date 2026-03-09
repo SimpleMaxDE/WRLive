@@ -2,11 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background: radial-gradient(circle at top right, rgba(124, 92, 255, 0.2), transparent 35%), #0a0f1a;
-  color: #e7edf9;
+:root {
+  color-scheme: dark;
 }
 
-.card {
-  @apply rounded-2xl border border-white/10 bg-card/80 p-4 shadow-xl;
+body {
+  background:
+    radial-gradient(circle at 15% 10%, rgba(255, 187, 64, 0.2), transparent 35%),
+    radial-gradient(circle at 85% 5%, rgba(72, 126, 255, 0.2), transparent 30%),
+    linear-gradient(180deg, #0a1020 0%, #0a0f1a 100%);
+  color: #f2f5ff;
+  min-height: 100vh;
+}
+
+.card,
+.panel {
+  @apply rounded-2xl border border-white/15 bg-card/85 p-4 shadow-2xl shadow-black/25 backdrop-blur;
+}
+
+input,
+select,
+button {
+  @apply outline-none ring-0;
+}
+
+input:focus,
+select:focus,
+button:focus-visible,
+a:focus-visible {
+  @apply ring-2 ring-accent/70 ring-offset-2 ring-offset-bg;
 }
